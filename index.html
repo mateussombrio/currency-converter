@@ -8,28 +8,28 @@
   </head>
   <body>
     <!-- Main div -->
-    <h1>Currency Converter</h1>
-    <div class="main-cards">
-      <!-- Left card -->
-      <div class="card-left">
-        <p>Amount</p>
-        <div class="money-country">
-          <input class="input-left" type="text" />
-          <select name="country-1" id="country-1"></select>
+    <div class="main-div">
+      <h1>Currency Converter</h1>
+      <div class="main-cards">
+        <!-- Left card -->
+        <div class="card-left">
+          <div class="money-country">
+            <input class="input-left" type="text" />
+            <select name="country-1" class="country"></select>
+          </div>
         </div>
-      </div>
-      <div class="arrow-div">
-        <img class="arrow-icon" src="assets/toggle-arrow.svg" alt="" />
-      </div>
-      <!-- Right Card -->
-      <div class="card-right">
-        <p>Converted to</p>
-        <div>
-          <p class="converted_value"></p>
-          <input class="input-right" type="text" readonly />
-          <select name="country-2" id="country-2"></select>
+        <div class="arrow-div">
+          <img class="arrow-icon" src="assets/toggle-arrow.svg" alt="" />
         </div>
-      </div>
+        <!-- Right Card -->
+        <div class="card-right">
+          <div>
+            <p class="converted_value"></p>
+            <input class="input-right" type="text" readonly />
+            <select name="country-2" class="country"></select>
+          </div>
+        </div>
+    </div>
     </div>
     <script src="script.js"></script>
   </body>
