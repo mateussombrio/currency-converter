@@ -1,4 +1,4 @@
-const country = document.querySelectorAll(".country");
+const country = document.querySelector(".country");
 
 // Get the API currencies names
 async function getCurrency() {
@@ -21,8 +21,9 @@ async function boxCurrency() {
   const array = await CurrencyArray();
   for (let i = 0; i < array.length; i++) {
     const optionSelect = document.createElement("option");
-    optionSelect.setAttribute("value", `value${i}`);
+    // optionSelect.setAttribute("value", `value${i}`);
     optionSelect.value = array[i];
+    optionSelect.textContent = array[i].toUpperCase()
     country.appendChild(optionSelect)
   }
 }
